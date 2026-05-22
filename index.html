@@ -166,6 +166,23 @@
   form.enq .btn{margin-top:20px;width:100%;text-align:center;cursor:pointer}
   .note{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12.5px;color:var(--ink-soft);margin-top:14px}
 
+  /* FAQ */
+  .faq-list{margin-top:38px;border-top:1px solid var(--line)}
+  .faq-item{border-bottom:1px solid var(--line)}
+  .faq-item summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:18px;
+    padding:20px 4px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:17px;font-weight:600;color:var(--navy)}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary:hover{color:var(--sky-deep)}
+  .faq-item summary .mk{flex:none;width:22px;height:22px;border-radius:50%;border:1px solid var(--sky-deep);
+    display:flex;align-items:center;justify-content:center;color:var(--sky-deep);font-size:16px;line-height:1;transition:transform .2s}
+  .faq-item[open] summary .mk{transform:rotate(45deg)}
+  .faq-item .ans{padding:0 4px 22px;color:var(--ink-soft);font-size:16px;max-width:74ch}
+
+  /* Map */
+  .map-wrap{margin-top:28px;border:1px solid var(--line);border-radius:10px;overflow:hidden;
+    box-shadow:0 1px 2px rgba(29,58,95,.04)}
+  .map-wrap iframe{display:block;width:100%;height:300px;border:0}
+
   /* Footer */
   footer.site{background:var(--navy-deep);color:#aec4dc;font-family:"Helvetica Neue",Arial,sans-serif;font-size:14px}
   footer.site .wrap{padding-top:52px;padding-bottom:36px}
@@ -192,7 +209,7 @@
 <div class="topbar">
   <div class="wrap">
     <span class="reg">Regulated by the Law Society of Scotland</span>
-    <span><a href="tel:01334656644">01334 656644</a> &nbsp;|&nbsp; <a href="mailto:info@williamsgraywilliams.co.uk">info@williamsgraywilliams.co.uk</a></span>
+    <span><a href="tel:+441334656644">01334 656644</a> &nbsp;|&nbsp; <a href="mailto:info@williamsgraywilliams.co.uk">info@williamsgraywilliams.co.uk</a></span>
   </div>
 </div>
 
@@ -207,6 +224,7 @@
       <a href="#directors">Our Directors</a>
       <a href="#heritage">Heritage</a>
       <a href="#areas">Areas Served</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
       <a class="btn" href="#contact">Make an Enquiry</a>
     </nav>
@@ -409,6 +427,47 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Common Questions</div>
+      <h2 class="title">Questions we are often asked</h2>
+      <p class="lead">A few things people like to know before they get in touch. If your question is not covered here, please call or email the office and we will be glad to help.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Where are you based?<span class="mk">+</span></summary>
+        <div class="ans">Our legal office is at 7 St Catherine Street, Cupar, Fife, KY15 4LS, in the centre of the town. Our estate agency office is a short walk away at 10 St Catherine Street.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What areas do you cover?<span class="mk">+</span></summary>
+        <div class="ans">We act for clients in Cupar and across North East Fife, including St Andrews, Newport-on-Tay, Tayport, Auchtermuchty, Ladybank, Falkland and Springfield, as well as the wider Fife area.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What services do you offer?<span class="mk">+</span></summary>
+        <div class="ans">We handle residential and commercial property and conveyancing, family law, wills, executries and powers of attorney, and court work and dispute resolution. You can read more about each area in the services section above.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you provide Notary Public services?<span class="mk">+</span></summary>
+        <div class="ans">Yes. Both of our directors, Douglas I G Gray and Kenneth W Gray, are Notaries Public, so we can attend to documents that require notarial certification here at the Cupar office.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I make an appointment?<span class="mk">+</span></summary>
+        <div class="ans">Call the office on <a href="tel:+441334656644">01334 656644</a>, send an email to <a href="mailto:info@williamsgraywilliams.co.uk">info@williamsgraywilliams.co.uk</a>, or use the enquiry form below. A member of the firm will arrange a convenient time to speak with you.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Are you regulated?<span class="mk">+</span></summary>
+        <div class="ans">Yes. Williams Gray Williams is regulated by the Law Society of Scotland, and both directors are qualified solicitors and Notaries Public.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need to come into the office to speak with you?<span class="mk">+</span></summary>
+        <div class="ans">You are welcome to visit us at St Catherine Street in Cupar. If it is easier for you, we can also discuss your matter by telephone or email and arrange to meet when it suits you.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- Contact -->
 <section id="contact">
   <div class="wrap">
@@ -437,7 +496,7 @@
           <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#1d3a5f" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3.5l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div>
           <div>
             <div class="lbl">Telephone</div>
-            <div class="val"><a href="tel:01334656644">01334 656644</a></div>
+            <div class="val"><a href="tel:+441334656644">01334 656644</a></div>
           </div>
         </div>
         <div class="info-row">
@@ -453,6 +512,9 @@
             <div class="lbl">DX</div>
             <div class="val">560573 CUPAR</div>
           </div>
+        </div>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps?q=7+St+Catherine+Street+Cupar+KY15+4LS&output=embed" loading="lazy" title="Williams Gray Williams location" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <form class="enq" onsubmit="return false;">
@@ -487,7 +549,7 @@
   <div class="wrap">
     <div class="cols">
       <div>
-        <img class="flogo" src="https://williamsgraywilliams.co.uk/wp-content/uploads/2024/05/williamsgraywilliams-logo-with-strapline.png" alt="Williams Gray Williams">
+        <img class="flogo" loading="lazy" src="https://williamsgraywilliams.co.uk/wp-content/uploads/2024/05/williamsgraywilliams-logo-with-strapline.png" alt="Williams Gray Williams">
         <p>Solicitors, estate agents and notaries public in Cupar, acting for private clients across North East Fife in property, family, estate planning and dispute matters.</p>
       </div>
       <div>
@@ -500,7 +562,7 @@
       <div>
         <h4>Contact</h4>
         <p>7 St Catherine Street<br>Cupar, Fife KY15 4LS<br>
-        <a href="tel:01334656644">01334 656644</a><br>
+        <a href="tel:+441334656644">01334 656644</a><br>
         <a href="mailto:info@williamsgraywilliams.co.uk">info@williamsgraywilliams.co.uk</a></p>
       </div>
     </div>
@@ -611,6 +673,72 @@
     {"@type": "EducationalOccupationalCredential", "credentialCategory": "Bachelor of Laws with Honours (LLB Hons)"},
     {"@type": "EducationalOccupationalCredential", "credentialCategory": "Diploma in Legal Practice (DipLP)"},
     {"@type": "EducationalOccupationalCredential", "credentialCategory": "Notary Public"}
+  ]
+}
+</script>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where are you based?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our legal office is at 7 St Catherine Street, Cupar, Fife, KY15 4LS, in the centre of the town. Our estate agency office is a short walk away at 10 St Catherine Street."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We act for clients in Cupar and across North East Fife, including St Andrews, Newport-on-Tay, Tayport, Auchtermuchty, Ladybank, Falkland and Springfield, as well as the wider Fife area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We handle residential and commercial property and conveyancing, family law, wills, executries and powers of attorney, and court work and dispute resolution. You can read more about each area in the services section above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide Notary Public services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Both of our directors, Douglas I G Gray and Kenneth W Gray, are Notaries Public, so we can attend to documents that require notarial certification here at the Cupar office."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I make an appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call the office on 01334 656644, send an email to info@williamsgraywilliams.co.uk, or use the enquiry form below. A member of the firm will arrange a convenient time to speak with you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you regulated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Williams Gray Williams is regulated by the Law Society of Scotland, and both directors are qualified solicitors and Notaries Public."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to come into the office to speak with you?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You are welcome to visit us at St Catherine Street in Cupar. If it is easier for you, we can also discuss your matter by telephone or email and arrange to meet when it suits you."
+      }
+    }
   ]
 }
 </script>
